@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Based on template from csslayoutgenerator.com -->
+
+<head>
+    <meta charset='utf-8' />
+    <title>Stories and Maps: Hiking and Exploring the Danish Countryside</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <meta name="keywords" content="travel, Denmark, hiking, travel diary, hike, walk, nature, beaches, forests, Europe" />
+    <meta name="description" content="An interactive travel journal of nature trails in Jutland, Denmark" />
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- stylesheets -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+
+<body>
+
+    <!-- mobile layout change -->
+    <div id="mobile">
+        <img src="img/phone_rotate.png" alt="Rotate phone to landscape mode">
+        <h2 id="mobile-text">Please rotate your device.</h2>
+    </div>
+
+    <div class="site">
+        <article class="banner">
+            <div class="img"></div>
+            <h1><span>A Guide to</span><br>Denmark's Finest Hikes</h1>
+            <a href="#go-to">Finding Adventures in my own Backyard</a>
+        </article>
+
+
+        <!-- website begins -->
+
+        <article class="map-feature" id="go-to">
+
+            <div class="map" style="position: absolute; width: 100%; height: 100%;">
+                <div id='map'></div>
+            </div>
+
+            <div id="features">
+
+                <section id='intro' class='active'>
+                    <h2>Collected Stories</h2>
+                    <h3>Travels across Jutland</h3>
+                    <p>
+                        One of the most intriguing things about my move to Denmark has been enjoying the abundant nature.
+                    </p>
+                </section>
+
+                <section id='blokhus' class='active'>
+                    <h2>Blokhus Strand</h2>
+                    <img src="img/blokhus-strand.JPG" alt="Denmark's Western Coastline Blokhus Strand Beach">
+                    <h3>Sand Dunes along the North Sea</h3>
+                    <p>There’s hardly a more quintessentially Danish seaside than the wide, white sandy beaches along Jutland’s West coast. Day trippers drive their cars right onto Blokhus Strand and step out onto the windy coast to admire the waves of the North Sea. Sand dunes line the coast and are covered with the robust lyme and marram grass, which help the dunes to survive the strong winds. Pockets of wind shelter between the dunes are perfect for soaking up the sun on a warm Spring day. <a href="https://www.visitjammerbugten.dk/ln-int/jammerbugten/nature/blokhus-beach-0" target="_blank">Read more about Blokhus Strand</a>
+
+                    </p>
+                </section>
+
+
+                <section id='rebild'>
+                    <h2>Rebild Bakker</h2>
+                    <img src="img/rebild-bakker.JPG" alt="Rolling hills at Rebild Bakker">
+                    <h3>Grazing sheep over rolling hills</h3>
+                    <p>Rebild Bakker is a large heathland of rolling hills surrounded by forest on three sides. Shrubland heathlands like this one are a rare habitat in Europe. It's a beautiful destination for an easy summer hike. Sheep walk freely throughout the National Park and it is possible to see several traditional thatch roofed farmhouses along the trails.<a href="https://www.visitdenmark.nl/nl/denmark/rebild-bakker-national-park-gdk679415" target="_blank">Read more about Rebild Bakker</a>
+                    </p>
+                </section>
+
+                <section id='ravnkilde'>
+                    <h2>Ravnkilden</h2>
+                    <img src="img/ravnskilde.JPG" alt="Ravnkilde natural spring in Rebild Bakker">
+                    <h3>Crisp natural spring</h3>
+                    <p>North-West of Rebild Bakker surrounded by woods is a beautiful natural spring. It's a beautiful sight to behold, and the water is cool and refreshing.<a href="https://www.rebildporten.com/ln-int/ravnkilde-gdk679414" target="_blank">Read more about Ravnkilde</a></p>
+                </section>
+
+                <section id='oksso'>
+                    <h2>Store Økssø</h2>
+                    <img src="img/store-oksso.JPG" alt="Blueberries picked at Store Oksso">
+                    <h3>Picking blueberries from the forest floor</h3>
+                    <p>In late July, the forest floors around Store Økssø lake are covered in delicious blueberry bushes. Walk the trail around the lake and keep your eyes peeled for the fruit-filled bushes.
+                        <a href="https://www.visitdenmark.com/denmark/store-oksso-gdk597625" target="_blank">Read more about Store Økssø</a>
+
+                    </p>
+                </section>
+
+                <section id='marselisborg'>
+                    <h2>Thor Forest</h2>
+                    <img src="img/marselisborg.JPG" alt="Denmark's Western Coastline Blokhus Strand Beach">
+                    <h3>Feeding carrots to the deer</h3>
+                    <p>South of the Aarhus city, in the Thor Forest which is part of the larger Marselisborg-Moesgaard forest, lies the Deer Park. Here you can get quite close to the beautiful population of sika and fallow deer. Bring a bag of carrots and you're likely to make some friends! <a href="https://www.visitaarhus.com/ln-int/deer-park-gdk653301" target="_blank">Read more about the Thor Forest</a></p>
+                </section>
+
+                <section id='kridtgrav'>
+                    <h2>Nordens Kridtgraven</h2>
+                    <img src="img/kridtgraven.JPG" alt="Denmark's Western Coastline Blokhus Strand Beach">
+                    <h3>Bird watching at the Norden Chalk Pit</h3>
+                    <p>Nordens Kridtgraven is a quarry once used to source chalk and chalk sludge. There are 10-20 metre tall cliffs which look out onto a unusually blue waters. The pit is filled with plants and birds. It's perfect for a morning stroll.<a href="https://www.visitaalborg.com/ln-int/norden-chalk-pit-gdk762436" target="_blank">Read more about Nordens Kridtgraven</a></p>
+                </section>
+
+                <section id='brabrand-soen'>
+                    <h2>Brabrand Søen</h2>
+                    <img src="img/brabrand-soen.JPG" alt="Denmark's Western Coastline Blokhus Strand Beach">
+                    <h3>10 bike trip around the Brabrand Lake pathway</h3>
+                    <p>The pathway around Brabrand Lake provides a beautiful vista of Midtjyllands diverse landscape. Paved paths all around the lake are the perfect way to see polder, forest of reeds, willow, scrub, fields, and forest areas.<a href="https://www.visitaarhus.com/ln-int/brabrand-lake-gdk653347" target="_blank">Read more about Brabrand Søen</a>
+
+                    </p>
+                </section>
+
+                <section id='arslev'>
+                    <h2>Årslev Engsø</h2>
+                    <img src="img/arslev-engso.JPG" alt="Denmark's Western Coastline Blokhus Strand Beach">
+                    <h3>Hidden nature trails</h3>
+                    <p>Årslev Engsø is near the city of Aarhus. Yet once you're on the dirt trail, surrounded by nature and abundant bird life, the peace and quiet will make you feel transported far, far away.
+                        <a href="https://www.visitaarhus.com/ln-int/arslev-lake-gdk1001576" target="_blank">Read more about Årslev Engsø</a>
+                    </p>
+                </section>
+            </div>
+            <!-- end features -->
+
+        </article>
+    </div>
+    <!-- end site -->
+
+    <footer>
+        
+    </footer>
+
+    <!-- javascript -->
+    <script src="script/script.js"></script>
+</body>
+</html>
